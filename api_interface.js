@@ -72,20 +72,6 @@ class Covid19API {
         return this.getData();
     };
 
-    
-    
-    getHead = async (val) => {
-        const { headers, status, statusText } = await axios.get(endpoint, {
-            params: this.apiParams,
-            timeout: 10000
-        });
-    
-        if (status >= 400)
-            throw new Error(statusText);
-        
-        
-        return headers[val]
-    };
 
     getLastUpdate = () => this.lastUpdate
     
