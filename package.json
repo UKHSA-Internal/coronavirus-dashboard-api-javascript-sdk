@@ -1,11 +1,11 @@
 {
-  "name": "uk-covid19",
+  "name": "@publichealthengland/uk-covid19",
   "version": "1.0.0",
   "description": "This is a JavaScript SDK for the COVID-19 API, as published by Public Health England on Coronavirus (COVID-19) in the UK dashboard.",
   "main": "api_interface.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/publichealthengland/coronavirus-dashboard-api-javascript-sdk.git"
+    "url": "ssh://git@github.com/publichealthengland/coronavirus-dashboard-api-javascript-sdk.git"
   },
   "author": {
     "name": "Public Health England",
@@ -40,5 +40,8 @@
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.test.ts",
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

@@ -30,13 +30,13 @@ Python 3.7+ is required to install and use this library.
 To install globally, please run:
 
 ```bash
-npm install -g uk-covid19
+npm install -g @publichealthengland/uk-covid19
 ```
 
 or to install locally in your project, run:
 
 ```bash
-npm install uk-covid19
+npm install @publichealthengland/uk-covid19
 ```
 
 Import the library in TypeScript as follows:
