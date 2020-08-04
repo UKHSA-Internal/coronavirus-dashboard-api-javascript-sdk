@@ -1,23 +1,44 @@
 {
-  "name": "uk_covid19",
+  "name": "uk-covid19",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a JavaScript SDK for the COVID-19 API, as published by Public Health England on Coronavirus (COVID-19) in the UK dashboard.",
   "main": "api_interface.js",
-  "dependencies": {
-    "axios": "^0.19.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/publichealthengland/coronavirus-dashboard-api-javascript-sdk.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Public Health England",
+    "email": "covid19-tech@phe.gov.uk",
+    "url": "https://coronavirus.data.gov.uk/"
+  },
+  "maintainers": [
+    "Pouria Hadjibagheri <Pouria.Hadjibagheri@phe.gov.uk>",
+    "Brogan Goble <Brogan.Goble@phe.gov.uk>"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/publichealthengland/coronavirus-dashboard-api-javascript-sdk/issues"
   },
-  "homepage": "https://github.com/publichealthengland/coronavirus-dashboard-api-javascript-sdk#readme"
+  "homepage": "https://github.com/publichealthengland/coronavirus-dashboard-api-javascript-sdk",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "mocha": "^8.1.0",
+    "chai": "^4.2.0",
+    "assert": "^2.0.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^8.10.2",
+    "@types/moment": "^2.13.0",
+    "@types/assert": "^1.5.1",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.1"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+  }
 }
