@@ -15,13 +15,15 @@ The endpoint for the data provided using this SDK is:
     https://api.coronavirus.data.gov.uk/v1/data
 
 
-### Pagination
+### Pagination
 
 Using this SDK will bypass the pagination process. You will always download the entire
 dataset unless the `latest_by` argument is defined.
 
 
-### Installation
+
+### Installation
+
 
 Python 3.7+ is required to install and use this library.
 
