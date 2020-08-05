@@ -1,6 +1,8 @@
 # Coronavirus (COVID-19) in the UK - API Service
 
+![npm](https://img.shields.io/npm/v/@publichealthengland/uk-covid19)
 ![GitHub](https://img.shields.io/github/license/publichealthengland/coronavirus-dashboard-api-javascript-sdk)
+![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@publichealthengland/uk-covid19)
 
 
 ## Software Development Kit (SDK) for JavaScript
