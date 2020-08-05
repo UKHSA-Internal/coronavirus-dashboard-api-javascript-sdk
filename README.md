@@ -42,13 +42,13 @@ npm install @publichealthengland/uk-covid19
 Import the library in TypeScript as follows:
 
 ```typescript
-import Cov19API from "uk-covid19";
+import Cov19API from "@publichealthengland/uk-covid19";
 ```
 
 or using CommonJS:
 
 ```javascript
-const Cov19API = require("uk-covid19");
+const Cov19API = require("@publichealthengland/uk-covid19");
 ```
 
 
@@ -60,7 +60,7 @@ cumulative deaths for England using the API.
 We start off by importing the library into our workspace:
 
 ```javascript
-const Cov19API = require("uk-covid19");
+const Cov19API = require("@publichealthengland/uk-covid19");
 ```
 
 Next, we construct the value of the `filters` parameter:
