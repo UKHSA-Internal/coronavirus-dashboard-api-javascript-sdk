@@ -1,6 +1,6 @@
 {
   "name": "@publichealthengland/uk-covid19",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "This is a JavaScript SDK for the COVID-19 API, as published by Public Health England on Coronavirus (COVID-19) in the UK dashboard.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
