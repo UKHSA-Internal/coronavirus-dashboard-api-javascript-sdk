@@ -2,7 +2,7 @@
   "name": "@publichealthengland/uk-covid19",
   "version": "1.0.0",
   "description": "This is a JavaScript SDK for the COVID-19 API, as published by Public Health England on Coronavirus (COVID-19) in the UK dashboard.",
-  "main": "api_interface.js",
+  "main": "dist/UKCovid19/index.js",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com/publichealthengland/coronavirus-dashboard-api-javascript-sdk.git"
