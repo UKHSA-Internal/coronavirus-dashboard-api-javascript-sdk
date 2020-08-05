@@ -1,8 +1,8 @@
 import { describe, it } from "mocha";
 import assert from "assert";
 
-import Cov19API from "../src";
-import type { StructureType, FiltersType } from "../src/UKCovid19";
+import Cov19API from "..";
+import type { StructureType, FiltersType } from "../lib/UKCovid19";
 
 
 const queryFilters: FiltersType = [
