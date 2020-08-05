@@ -9,7 +9,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      -
     # Setup .npmrc file to publish to npm
     - uses: actions/setup-node@v1
       with:
