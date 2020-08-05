@@ -1,7 +1,7 @@
 import { describe, it } from "mocha";
 import assert from "assert";
 
-import Cov19API from "..";
+import Cov19API from "../lib";
 import type { StructureType, FiltersType } from "../lib/UKCovid19";
 
 
