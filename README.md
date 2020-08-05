@@ -42,7 +42,7 @@ npm install @publichealthengland/uk-covid19
 Import the library in TypeScript as follows:
 
 ```typescript
-from Cov19API import "uk-covid19";
+import Cov19API from "uk-covid19";
 ```
 
 or using CommonJS:
