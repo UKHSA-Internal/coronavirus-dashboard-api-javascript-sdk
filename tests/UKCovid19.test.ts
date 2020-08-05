@@ -1,20 +1,20 @@
 import { describe, it } from "mocha";
 import assert from "assert";
 
-import Cov19API from "../UKCovid19";
-import type { StructureType, FiltersType } from "../UKCovid19/UKCovid19";
+import Cov19API from "../src";
+import type { StructureType, FiltersType } from "../src/UKCovid19";
 
 
-const
-    queryFilters: FiltersType = [
-        'areaType=ltla',
-        'areaName=adur'
-    ],
-    queryStructure: StructureType = {
-        "name": "areaName",
-        "date": "date",
-        "newCases": "newCasesBySpecimenDate"
-    };
+const queryFilters: FiltersType = [
+    'areaType=ltla',
+    'areaName=adur'
+];
+
+const queryStructure: StructureType = {
+    "name": "areaName",
+    "date": "date",
+    "newCases": "newCasesBySpecimenDate"
+};
 
 
 describe("Cov19API", () => {
@@ -127,13 +127,13 @@ describe("Cov19API", () => {
     
         it('latestBy integrity', async () => {
         
-            const
-                api = new Cov19API({
-                    filters: queryFilters,
-                    structure: queryStructure,
-                    latestBy: "newCasesBySpecimenDate"
-                }),
-                jsonLatestData = await api.getJSON();
+            const apiLatestBy = new Cov19API({
+                filters: queryFilters,
+                structure: queryStructure,
+                latestBy: "newCasesBySpecimenDate"
+            });
+            
+            const jsonLatestData = await apiLatestBy.getJSON();
         
             assert.strictEqual(typeof jsonLatestData, "object");
         
@@ -159,10 +159,9 @@ describe("Cov19API", () => {
         });
     
         it('response lengths are equal', async () => {
-            const
-                csvData = await api.getCSV(),
-                jsonData = await api.getJSON(),
-                csvHeaderLength = 1;
+            const csvData = await api.getCSV();
+            const jsonData = await api.getJSON();
+            const csvHeaderLength = 1;
         
             assert.equal(
                 jsonData.data.length,
