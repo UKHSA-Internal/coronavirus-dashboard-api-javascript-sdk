@@ -5,7 +5,7 @@
 
 ## Software Development Kit (SDK) for JavaScript
 
-This is a Python SDK for the COVID-19 API, as published by Public Health England
+This is a JavaScript SDK for the COVID-19 API, as published by Public Health England
 on [Coronavirus (COVID-19) in the UK](http://coronavirus.data.gov.uk/).
 
 The API supplies the latest data for the COVID-19 outbreak in the United Kingdom. 
