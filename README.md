@@ -14,6 +14,9 @@ The endpoint for the data provided using this SDK is:
 
     https://api.coronavirus.data.gov.uk/v1/data
 
+The SDK is also available for [Python](https://github.com/publichealthengland/coronavirus-dashboard-api-python-sdk) 
+and [R](https://github.com/publichealthengland/coronavirus-dashboard-api-R-sdk).
+
 
 ### Pagination
 
