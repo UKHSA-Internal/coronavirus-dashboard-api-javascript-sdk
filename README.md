@@ -2,6 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/@publichealthengland/uk-covid19)
 ![GitHub](https://img.shields.io/github/license/publichealthengland/coronavirus-dashboard-api-javascript-sdk)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/publichealthengland/coronavirus-dashboard-api-javascript-sdk.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/publichealthengland/coronavirus-dashboard-api-javascript-sdk/context:javascript)
 
 ## Software Development Kit (SDK) for JavaScript
 
