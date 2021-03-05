@@ -64,6 +64,7 @@ export interface JSONResponse {
 class Cov19API {
     static readonly endpoint: string =
         'https://api.coronavirus.data.gov.uk/v1/data';
+    static readonly optionsEndpoint: string = 'https://api.coronavirus.data.gov.uk/v1/'
     private readonly structure: StructureType;
     private readonly filters: string[];
     private readonly latestBy: string | undefined;
@@ -213,8 +214,7 @@ class Cov19API {
             data,
             status,
             statusText,
-        } = await axios.options(Cov19API.endpoint, { timeout: 10000 });
-
+        } = await axios.options(Cov19API.optionsEndpoint, { timeout: 10000 });    
         if (status >= 400) throw new Error(statusText);
 
         return data;
