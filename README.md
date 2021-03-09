@@ -43,7 +43,7 @@ or to install locally in your project, run:
 npm install @publichealthengland/uk-covid19
 ```
 
-Import the library in TypeScript as follows:
+Import the library in TypeScript / ES6 as follows:
 
 ```typescript
 import Cov19API from "@publichealthengland/uk-covid19";
@@ -109,9 +109,9 @@ const api = new Cov19API({
         structure: casesAndDeaths
     });
 
-const data = api.getJSON(); 
-
-console.log(data)
+api.getJSON().then((result) => {
+    console.log(result)
+});
 ```
 
 You may also use `data.getCSV()` to download the data in CSV. This is exemplified later 
