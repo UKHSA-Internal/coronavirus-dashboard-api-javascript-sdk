@@ -169,11 +169,11 @@ const latestData = new Cov19API({
         filters: allNations,
         structure: casesAndDeaths,
         latest_by: "newCasesByPublishDate"
-    });
+        });
 
-const data = latestData.getJSON();
-
-console.log(data)
+latestData.getJSON().then((result) => {
+    console.log(data)
+});
 ```
 
 ```
