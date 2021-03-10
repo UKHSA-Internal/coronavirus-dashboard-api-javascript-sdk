@@ -183,7 +183,7 @@ class Cov19API {
     }; // head
 
     /**
-     * Produces the timestamp for the last update in GMT.
+     * Produces the timestamp formatted as ISO 8601 for the last update in GMT.
      *
      * @returns { Promise<string> }
      */
