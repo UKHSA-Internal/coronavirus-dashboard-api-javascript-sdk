@@ -5,3 +5,7 @@ node_modules
 package-lock.json
 .nyc_output
 dist
+
+# IDEs and Code Editors
+.vscode
+.idea

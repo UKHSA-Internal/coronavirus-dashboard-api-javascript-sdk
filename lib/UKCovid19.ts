@@ -71,14 +71,9 @@ class Cov19API {
 
     /**
      *
-     * @param filters { FiltersType }  API filters. See the API documentations for
-     *                                 additional information.
-     *
-     * @param structure { StructureType } Structure parameter. See the API
-     *                                    documentations for additional information.
-     *
-     * @param latestBy { latestBy } Retrieves the latest value for a specific
-     *                              metric. [Default: ``undefined``]
+     * @param {FiltersType} filters API filters. See the API documentations for additional information.
+     * @param {StructureType} structure Structure parameter. See the API documentations for additional information.
+     * @param {latestBy} latestBy Retrieves the latest value for a specific metric. [Default: ``undefined``]
      *
      * @see https://coronavirus.data.gov.uk//developers-guide
      */
@@ -106,7 +101,7 @@ class Cov19API {
      * Extracts paginated data by requesting all of the pages
      * and combining the results.
      *
-     * @param format { string }
+     * @param {string} format
      *
      * @returns { Promise<APIJSONResponse[] | string[]> }
      */
@@ -183,7 +178,7 @@ class Cov19API {
     }; // head
 
     /**
-     * Produces the timestamp for the last update in GMT.
+     * Produces the timestamp formatted as ISO 8601 for the last update in GMT.
      *
      * @returns { Promise<string> }
      */
