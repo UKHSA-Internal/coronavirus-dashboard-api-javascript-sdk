@@ -133,6 +133,9 @@ class Cov19API {
 
             result.push(data);
 
+            // break loop if records fit into current page
+            if (data.length === data.totalRecords) break;
+
             currentPage++;
         }
 
@@ -146,7 +149,7 @@ class Cov19API {
      */
     getJSON = async (): Promise<JSONResponse> => {
         const data = (await this.getData('json')) as APIJSONResponse[];
-        
+
         const responseData = data.reduce(
                 (acc, item) => [...acc, ...(item?.data ?? [])],
                 [] as StructureType[],
