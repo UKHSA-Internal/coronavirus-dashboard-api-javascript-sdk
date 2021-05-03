@@ -134,7 +134,7 @@ class Cov19API {
             result.push(data);
 
             // break loop if records fit into current page
-            if (data.length <= data.totalRecords) break;
+            if (data.length === data.totalRecords) break;
 
             currentPage++;
         }
