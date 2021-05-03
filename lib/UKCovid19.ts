@@ -118,7 +118,7 @@ class Cov19API {
         let currentPage = 1;
 
         while (true) {
-            const { data, status, statusText, headers, length, totalRecords } = await axios.get(
+            const { data, status, statusText, headers } = await axios.get(
                 Cov19API.endpoint,
                 {
                     params: { ...this.apiParams, page: currentPage, format },
@@ -134,7 +134,7 @@ class Cov19API {
             result.push(data);
 
             // break loop if records fit into current page
-            if (length <= totalRecords) break;
+            if (data.length <= data.totalRecords) break;
 
             currentPage++;
         }
